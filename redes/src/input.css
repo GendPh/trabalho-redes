@@ -1,3 +1,62 @@
+/* npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Nunito', serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+    @apply bg-background text-text;
+  }
+  main {
+    @apply p-5;
+  }
+}
+
+@layer components {
+  #toggle-mobile-nav {
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/icons/menu.svg');
+    @apply w-5 aspect-square block transition-all duration-150;
+    &.close {
+      background-image: url('./assets/icons/x.svg');
+    }
+  }
+
+  #mobile-nav {
+    ul {
+      @apply fixed w-full z-40 scale-y-0 origin-top flex flex-col gap-4 bg-secondary p-5 text-text text-xl border border-transparent border-t-primary transition-all duration-150;
+      &.open {
+        @apply scale-y-100;
+      }
+      li {
+        @apply cursor-pointer transition-colors duration-150;
+        &:hover {
+          @apply text-primary underline underline-offset-4;
+        }
+      }
+    }
+  }
+  #mobile-nav-bg {
+    @apply fixed inset-0 z-30 transition-colors duration-150;
+    &.open {
+      @apply bg-white/10 pointer-events-auto;
+    }
+    &.close {
+      @apply bg-transparent pointer-events-none;
+    }
+  }
+}

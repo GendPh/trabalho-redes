@@ -1,0 +1,25 @@
+<header class="top-0 z-50 sticky flex justify-between bg-secondary p-5 text-text text-xl">
+  <p class="logo">PWM RComputadores</p>
+
+  <button #navToggleButton type="button" id="toggle-mobile-nav" (click)="ToggleMobileNav()"></button>
+
+  <nav class="hidden">
+    <ul>
+      <li>Home</li>
+      <li>Equipamentos</li>
+      <li>Projeto Rede</li>
+      <li>Download</li>
+    </ul>
+  </nav>
+</header>
+
+<div (click)="CloseMobileNav()" #mobileNavBg id="mobile-nav-bg" class="close"></div>
+
+<nav id="mobile-nav">
+  <ul #mobileNavMenu>
+    <li (click)="CloseMobileNav()">Home</li>
+    <li (click)="CloseMobileNav()">Equipamentos</li>
+    <li (click)="CloseMobileNav()">Projeto Rede</li>
+    <li (click)="CloseMobileNav()">Download Relatório</li>
+  </ul>
+</nav>
