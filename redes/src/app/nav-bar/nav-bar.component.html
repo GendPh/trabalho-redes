@@ -1,15 +1,15 @@
 <header class="top-0 z-50 sticky bg-secondary p-5 text-text text-xl">
-  <div class="flex justify-between mx-auto max-w-screen-lg">
+  <div class="flex justify-between items-center mx-auto max-w-screen-lg">
     <p class="logo">PWM RComputadores</p>
 
     <button #navToggleButton type="button" id="toggle-mobile-nav" (click)="ToggleMobileNav()"></button>
 
-    <nav class="md:block hidden">
-      <ul class="flex gap-5">
-        <li>Home</li>
-        <li>Projeto Rede</li>
-        <li>Equipamentos</li>
-        <li>Download</li>
+    <nav class="lg:block hidden">
+      <ul class="flex items-center gap-5">
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">Projeto Rede</li>
+        <li class="cursor-pointer">Equipamentos</li>
+        <li class="bg-primary/50 p-2 rounded-lg cursor-pointer">Relatório PDF</li>
       </ul>
     </nav>
   </div>

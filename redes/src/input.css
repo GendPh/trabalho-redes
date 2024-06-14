@@ -25,13 +25,13 @@
     @apply text-3xl text-center;
   }
   body {
-    @apply bg-background text-text;
+    @apply bg-secondary text-text;
   }
   main {
-    @apply p-5;
+    @apply p-5 bg-background;
   }
   section {
-    @apply gap-5 grid md:grid-cols-2 mx-auto max-w-screen-lg;
+    @apply gap-5 grid lg:grid-cols-2 mx-auto max-w-screen-lg text-lg;
   }
 }
 
@@ -43,7 +43,7 @@
     background-position: center;
     background-size: cover;
     background-image: url('./assets/icons/menu.svg');
-    @apply md:hidden w-5 aspect-square block transition-all duration-150;
+    @apply lg:hidden w-5 aspect-square block transition-all duration-150;
     &.close {
       background-image: url('./assets/icons/x.svg');
     }
