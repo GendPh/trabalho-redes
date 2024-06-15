@@ -1,5 +1,98 @@
 <main>
-  <section>
-    
+  <!--   <section class="mt-20">
+    <article class="flex flex-col justify-center">
+      <h1 class="mb-5">Rede</h1>
+      <p>
+        A proposta de rede foi elaborada com configuração de router para acesso à rede externa (internet), de servidores
+        para atender à necessidade do cliente, de switches para criação de Virtual Local Area Networks, doravante
+        denominadas VLANs, e de access points para conectividade wireless caso utilizadores dos espaços tragam seus
+        próprios dispositivos.
+      </p>
+    </article>
+
+    <figure class="relative">
+      <img src="../../assets/rede.jpg" alt="rede image" class="rounded-lg w-full h-full">
+      <div class="absolute inset-0 bg-background/35 rounded-lg"></div>
+    </figure>
+  </section> -->
+
+  <section class="lg:grid-cols-1">
+    <h2>Equipamentos utilizados na rede</h2>
+
+    <article class="gap-5 grid">
+
+      <div class="rede-equipamento">
+        <figure>
+          <img src="../../assets/EdgeRouter_X_SFP.png" alt="EdgeRouter X SFP image" class="w-full h-full">
+        </figure>
+        <div class="content">
+          <p class="title">Router</p>
+          <p>Equipamento que permite a comunicação entre diferentes redes, sendo responsável por encaminhar os pacotes
+            de dados entre elas.</p>
+          <p>Configurou-se a porta interna do router com o <span>IP 192.168.1.10</span>, conforme gateway padrão do
+            servidor, a porta
+            de saída foi configurada com o <span>IP 192.168.0.1</span>.</p>
+        </div>
+      </div>
+
+      <div class="rede-equipamento">
+        <figure>
+          <img src="../../assets/Dell_PowerEdge_T440.jpg" alt="Dell_PowerEdge_T440 image" class="w-full h-full">
+        </figure>
+        <div class="content">
+          <p class="title">Servidor</p>
+          <p>
+            Os servidores são responsáveis pela administração e serviços da rede.
+            A proposta de rede possui dois servidores.
+            É válido reforçar que a
+            <span>temperatura do ambiente deve ser mantida entre 15 e 30 Cº</span>
+          </p>
+
+          <p>
+            <span class="block">Principal</span>
+            Trata do <span>servidor DHCP que atribui endereços IP às interfaces</span> autorizadas para acessar a rede.
+            Além disso, ele
+            também
+            funciona como <span>servidor de compartilhamento de arquivos e de banco de dados</span>, armazenando e
+            gerenciando todas
+            as informações críticas ou não críticas. O objetivo é <span>
+              garantir que todos esses dados estejam sempre
+              disponíveis e seguros
+            </span>.
+          </p>
+
+          <p>
+            <span class="block">Email</span>
+            Responsável pela <span>atribuição de endereçamento eletrónico aos utilizadores registados no domínio do
+              servidor</span>, possibilitando compartilhamento de arquivos, mensagens e informações relevantes de
+            <span>forma interna e segura</span>.
+          </p>
+        </div>
+      </div>
+
+      <div class="rede-equipamento">
+        <figure>
+          <img src="../../assets/Ubiquiti_USW_24_POE.jpg" alt="Ubiquiti USW-24-POE image" class="w-full h-full">
+        </figure>
+        <div class="content">
+          <p class="title">Switch</p>
+          <p>
+            Responsáveis pela comunicação interna de forma eficiente e reduzindo os domínios de colisão da rede,
+            permitem a cofiguração de VLANs permite a segmentação da rede, melhorando a segurança e o próprio desempenho
+            ao isolar diferentes tipos de tráfego de dados
+          </p>
+          <p>
+            <span class="block">Contam com o Spanning Tree Protocol - STP</span>
+            Conforme padronizado pelo Institute of Electrical and
+            Electronics Engineers - IEEE a fim de evitar os broadcast storms.
+          </p>
+          <p>
+            <span class="block">Broadcast storms</span>
+            Refere ao loop de broadcasts causados pela redundância entre switches, que replicam os
+            broadcasts entre si de forma repetitiva e infinita.
+          </p>
+        </div>
+      </div>
+    </article>
   </section>
 </main>

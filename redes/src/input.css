@@ -14,7 +14,8 @@
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  .title {
     font-family: 'Roboto', sans-serif;
   }
 
@@ -79,6 +80,34 @@
     }
     &.close {
       @apply bg-transparent pointer-events-none;
+    }
+  }
+  .rede-equipamento {
+    @apply gap-2 grid grid-cols-2 bg-secondary;
+    &:nth-child(even) {
+      .content {
+        @apply col-start-1 row-start-1 rounded-l-lg;
+      }
+      figure {
+        @apply col-start-2 row-start-1;
+        img {
+          @apply rounded-r-lg;
+        }
+      }
+    }
+    figure {
+      img {
+        @apply rounded-l-lg;
+      }
+    }
+    .content {
+      @apply p-5 flex flex-col justify-center gap-3 text-lg text-justify rounded-r-lg;
+      .title {
+        @apply font-bold text-2xl text-center tracking-wider;
+      }
+      span {
+        @apply font-bold underline underline-offset-4;
+      }
     }
   }
 }
