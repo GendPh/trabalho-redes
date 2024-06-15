@@ -1057,6 +1057,11 @@ section{
   background-color: rgb(38 43 115 / var(--tw-bg-opacity));
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-fill{
   -o-object-fit: fill;
      object-fit: fill;
