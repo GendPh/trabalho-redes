@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var lightbox: any;
 
 @Component({
   selector: 'app-rede',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './rede.component.html',
   styles: ``
 })
-export class RedeComponent {
+export class RedeComponent implements OnInit {
+  constructor() { }
 
+  ngOnInit() {
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  }
 }
