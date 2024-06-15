@@ -8,5 +8,8 @@ export const routes: Routes = [
   },
   {
     path: 'rede', component: RedeComponent,
+  },
+  {
+    path: '**', redirectTo: '',
   }
 ];
