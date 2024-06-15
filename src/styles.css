@@ -956,6 +956,10 @@ section{
   z-index: 50;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1017,12 +1021,28 @@ section{
   display: none;
 }
 
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
 .h-80{
   height: 20rem;
 }
 
 .h-full{
   height: 100%;
+}
+
+.h-40{
+  height: 10rem;
+}
+
+.h-60{
+  height: 15rem;
 }
 
 .w-full{
@@ -1104,6 +1124,11 @@ section{
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(38 43 115 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .object-fill{
