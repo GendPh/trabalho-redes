@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RedeComponent } from './rede/rede.component';
+import { OrcamentoComponent } from './orcamento/orcamento.component';
 
 export const routes: Routes = [
   {
@@ -8,6 +9,9 @@ export const routes: Routes = [
   },
   {
     path: 'rede', component: RedeComponent,
+  },
+  {
+    path: 'orçamento', component: OrcamentoComponent,
   },
   {
     path: '**', redirectTo: '',
