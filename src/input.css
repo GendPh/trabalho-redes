@@ -48,7 +48,7 @@
     }
   }
   .logo {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold cursor-pointer;
   }
   #toggle-mobile-nav {
     background-position: center;
@@ -92,17 +92,18 @@
       figure {
         @apply lg:col-start-2 lg:row-start-1;
         img {
-          @apply rounded-r-lg;
+          @apply rounded-l-lg rounded-r-none;
         }
       }
     }
     figure {
+      @apply h-72 md:h-full;
       img {
-        @apply rounded-l-lg;
+        @apply rounded-r-lg;
       }
     }
     .content {
-      @apply p-5 flex flex-col justify-center gap-3 text-lg text-justify rounded-r-lg;
+      @apply p-5 flex flex-col gap-3 text-lg text-justify rounded-r-lg;
       .title {
         @apply font-bold text-2xl text-center tracking-wider;
       }
