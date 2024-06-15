@@ -1034,6 +1034,15 @@ section{
   width: 100%;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
 .max-w-screen-lg{
   max-width: 1024px;
 }
@@ -1117,6 +1126,11 @@ section{
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 89 199 / var(--tw-bg-opacity));
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1154,8 +1168,29 @@ section{
   padding-bottom: 0.5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
+.pl-24{
+  padding-left: 6rem;
 }
 
 .text-center{
