@@ -83,7 +83,7 @@
     }
   }
   .rede-equipamento {
-    @apply gap-2 grid grid-cols-2 bg-secondary;
+    @apply gap-2 grid grid-cols-2 bg-secondary rounded-lg;
     &:nth-child(even) {
       .content {
         @apply col-start-1 row-start-1 rounded-l-lg;

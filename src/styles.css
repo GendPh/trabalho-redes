@@ -831,6 +831,7 @@ section{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(38 43 115 / var(--tw-bg-opacity));
   &:nth-child(even) {
@@ -992,10 +993,6 @@ section{
   display: none;
 }
 
-.aspect-video{
-  aspect-ratio: 16 / 9;
-}
-
 .h-80{
   height: 20rem;
 }
@@ -1040,6 +1037,10 @@ section{
   justify-content: space-evenly;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -1059,11 +1060,6 @@ section{
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(38 43 115 / var(--tw-bg-opacity));
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .object-fill{
