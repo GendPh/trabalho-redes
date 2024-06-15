@@ -1,4 +1,4 @@
-<header class="top-0 z-50 sticky bg-secondary p-5 text-text text-xl">
+<header class="top-0 z-50 sticky bg-secondary p-5 text-lg text-text">
   <div class="flex justify-between items-center mx-auto max-w-screen-lg">
     <p class="logo">PWM RComputadores</p>
 
@@ -6,10 +6,11 @@
 
     <nav class="lg:block hidden">
       <ul class="flex items-center gap-5">
-        <li class="cursor-pointer">Home</li>
-        <li class="cursor-pointer">Projeto Rede</li>
-        <li class="cursor-pointer">Equipamentos</li>
-        <li class="bg-primary/50 p-2 rounded-lg cursor-pointer">Relatório PDF</li>
+        <li routerLink="/" class="cursor-pointer">Home</li>
+        <li routerLink="/rede" class="cursor-pointer">Projeto Rede</li>
+        <li routerLink="/equipamentos" class="cursor-pointer">Equipamentos</li>
+        <li class="bg-primary/50 p-2 rounded-lg cursor-pointer"><a download
+            href="../../assets/Projeto_redes.zip">Download Projeto</a></li>
       </ul>
     </nav>
   </div>

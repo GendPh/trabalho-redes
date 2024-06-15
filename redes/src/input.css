@@ -28,7 +28,7 @@
     @apply bg-secondary text-text;
   }
   main {
-    @apply p-5 bg-background;
+    @apply p-5 bg-background gap-40 grid;
   }
   section {
     @apply gap-5 grid lg:grid-cols-2 mx-auto max-w-screen-lg text-lg;
@@ -36,6 +36,15 @@
 }
 
 @layer components {
+  .btn {
+    @apply block rounded-lg w-fit px-4 py-2 text-center uppercase cursor-pointer shadow-secondary shadow-lg active:scale-95 transition-transform duration-150;
+    &.primary {
+      @apply bg-primary;
+    }
+    &.secondary {
+      @apply bg-secondary;
+    }
+  }
   .logo {
     @apply text-xl font-bold;
   }
