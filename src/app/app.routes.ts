@@ -5,13 +5,13 @@ import { OrcamentoComponent } from './orcamento/orcamento.component';
 
 export const routes: Routes = [
   {
-    path: '', component: HomeComponent,
+    path: '', component: HomeComponent, title: 'Home',
   },
   {
-    path: 'rede', component: RedeComponent,
+    path: 'rede', component: RedeComponent, title: 'Rede',
   },
   {
-    path: 'orçamento', component: OrcamentoComponent,
+    path: 'orçamento', component: OrcamentoComponent, title: 'Orçamento',
   },
   {
     path: '**', redirectTo: '',

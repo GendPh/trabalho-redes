@@ -1,1 +1,21 @@
-<p>footer works!</p>
+<footer class="p-5">
+  <div class="gap-2 grid md:grid-cols-2 mx-auto max-w-screen-lg text-sm lg:text-lg">
+
+    <div class="flex items-center">
+      <p class="logo">PWM RComputadores</p>
+    </div>
+
+    <div>
+      <nav>
+        <ul class="flex md:flex-row flex-col md:justify-end items-center gap-5 md:mt-0 mb-5">
+          <li routerLink="/" class="cursor-pointer">Home</li>
+          <li routerLink="/rede" class="cursor-pointer">Projeto Rede</li>
+          <li routerLink="/orçamento" class="cursor-pointer">Orçamento</li>
+          <li class="bg-primary/50 p-2 rounded-lg cursor-pointer"><a download
+              href="../../assets/ProjetoFinal.zip">Download Projeto</a></li>
+        </ul>
+      </nav>
+      <p class="text-center md:text-end">© {{year}} All rights reserved by Gabriel - Jader - Telmo</p>
+    </div>
+  </div>
+</footer>

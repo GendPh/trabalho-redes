@@ -1084,6 +1084,10 @@ section{
   gap: 2.5rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -1209,6 +1213,10 @@ section{
 }
 
 @media (min-width: 768px){
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:h-80{
     height: 20rem;
   }
@@ -1225,6 +1233,14 @@ section{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1233,6 +1249,10 @@ section{
   .md\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .md\:text-end{
+    text-align: end;
   }
 }
 
