@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-orcamento',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './orcamento.component.html',
   styles: ``
 })
-export class OrcamentoComponent {
+export class OrcamentoComponent implements OnInit {
+
+  ngOnInit(): void {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
+  }
 
 }

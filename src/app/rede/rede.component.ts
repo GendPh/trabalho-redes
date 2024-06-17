@@ -16,5 +16,8 @@ export class RedeComponent implements OnInit {
       'resizeDuration': 200,
       'wrapAround': true
     });
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }
 }
